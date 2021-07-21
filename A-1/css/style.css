@@ -1,0 +1,91 @@
+/*nor*/
+body,
+ul,
+lI {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {}
+
+/*cus*/
+
+.main page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 700px;
+    background-color: #afafaf;
+}
+
+/*header*/
+header > .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: #999;
+}
+
+header > .menu{
+    float: left;
+    width: 950px;
+    height: 100px;
+    background-color: #888;
+    
+}
+
+/*slide*/
+.slide{
+    height: 300px;
+    background-color: #777;
+}
+
+/*contnets*/
+.contents > div{
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+.contents > notice{
+    background-color: #666;
+}
+
+.contents > banner{
+    background-color: #555;
+}
+
+.contents > shortcut{
+    background-color: #444;
+}
+
+/*footer*/
+
+footer > .foot_logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: #333;
+    
+}
+
+footer >.copyright {
+    float: left;
+    width: 700px;
+    height: 100px;
+    background-color: #888;
+}
+footer> .sns{
+    float: left;
+    width: 250px;
+    height: 100px;
+    bgc#
+}
+
+
