@@ -1,4 +1,4 @@
-//$(document).ready(function () {
+$(document).ready(function () {
 
     $(".menu > ul > li").mouseover(function () {
         $(this).find(".submenu").stop().slideDown(200);
@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 
 //popup
-//$(document).ready(function () {
+$(document).ready(function () {
 
     $(".notice li:first").click(function () {
         $(".layer").show();

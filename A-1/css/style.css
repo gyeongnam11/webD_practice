@@ -109,6 +109,10 @@ header> .menu li ul.submenu li{
 .tab_btn > div{
     float: left;   
 }
+.tab_btn > .tab1:hover{
+    background-color: beige;   
+}
+
 .tab_btn >.tab1{
     position: relative;
     top: 8px;

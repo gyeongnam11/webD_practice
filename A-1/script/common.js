@@ -1,4 +1,4 @@
-//$(document).ready(function () {
+$(document).ready(function () {
 
     $(".menu > ul > li").mouseover(function () {
         $(this).find(".submenu").stop().slideDown(200);
@@ -12,7 +12,7 @@
 });
 //tab bt
 $(document).ready(function () {
-    var tabBtn = $(".tab_btn > div>.tab1");
+    var tabBtn = $(".tab_btn > div");
     var tabCon = $(".tab_con > div");
 
     tabCon.hide().eq(0).show(); // eq : 인덱스 검색
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 
 //popup
-//$(document).ready(function () {
+$(document).ready(function () {
 
     $(".notice li:first").click(function () {
         $(".layer").show();
