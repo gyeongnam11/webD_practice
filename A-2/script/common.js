@@ -1,18 +1,16 @@
 $(document).ready(function () {
-
     $(".menu > ul > li").mouseover(function () {
-        $(this).find(".submenu").stop().slideDown(200);
+        $(".menu > ul > li > ul").show();
     });
-
     $(".menu > ul > li").mouseout(function () {
-        $(this).find(".submenu").stop().slideUp(200);
+        $(".menu > ul > li > ul").hide();
     });
 
-        
+
 });
 //tab bt
 $(document).ready(function () {
-    var tabBtn = $(".tab_btn > div");
+    var tabBtn = $(".tab_btn > ul > li");
     var tabCon = $(".tab_con > div");
 
     tabCon.hide().eq(0).show(); // eq : 인덱스 검색
@@ -33,10 +31,11 @@ $(document).ready(function () {
 
 
 
+
 //popup
 $(document).ready(function () {
 
-    $(".tab li:first").click(function () {
+    $(".notice li:first").click(function () {
         $(".layer").show();
         $(".layer-bg").show();
        
