@@ -86,6 +86,87 @@ header > .menu ul li:first-child ul.submenu::after {
     top: 0px;
     left: -630px;
     width: 630px;
-    height: 166px;
+    height: 124px;
     background-color: black;
+}
+.slide{
+    float: left;
+    width: 1200px;
+    height: 300px;
+    background-color: #555;
+}
+/*contents*/
+.contents> div{
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+}
+.contents> .notice{
+    background-color: #888;
+}
+/*tab*/
+.contents .tab_menu{
+/*    float: left;*/
+    padding: 10px;
+}
+.tab_menu h3{
+/*    float: left;*/
+    position: relative;
+    top: -15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    background-color: skyblue;
+    width: 70px; 
+    margin-left: 5px;
+}
+.notice li{
+/*    float: left;*/
+    margin-left: 9px;
+    margin-right: 9px;
+    padding: 6px;
+    position: relative;
+    top: -41px;
+    background-color: #fff;
+}
+.notice li a{
+    font-size: 13px;
+}
+.notice li a:hover{
+    font-weight: bold;
+}
+
+.notice li span{
+    float: right;
+}
+.gallery li{
+    margin-left: 9px;
+    margin-right: 9px;
+    padding: 8px;
+    height: 116px;
+    position: relative;
+    top: -41px;
+    background-color: #fff;
+    
+}
+.banner{
+    background-color: #666;
+}
+/*footer*/
+.foot_logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+}
+.copyright{
+    float: left;
+    width: 700px;
+    height: 100px;
+    background-color: #555;
+}
+.familysite{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: #444;
 }
