@@ -46,15 +46,10 @@ $(document).ready(function(){
             $(".slider").stop().animate({
                 top : result + 'px'
             });
-        },2000);
+        },1000);
     }
     slider();
 });
-
-
-
-
-
 
 
 
