@@ -30,67 +30,21 @@ $(document).ready(function () {
     })
 });
 
-//slider 상하
+//slider
 $(document).ready(function(){
     function slider(){
         var num = 0;
-        var result;
         setInterval(function(){
-            result = num * -300;
-            num++;
-            console .log(num);
-            if (num==3){
-                num =0;
+            if (num ==3){
+                num = 0;
             }
+            $('.slider p').hide();
+            $('.slider p').eq(-num).stop().fadeOut();
+             $('.slider p').eq(-num).stop().fadeIn();
             console.log(num);
-            $(".slider").stop().animate({
-                top : result + 'px'
-            });
-        },1000);
+            num++;
+        },2000);
+        
     }
     slider();
 });
-
-//slider 좌우
-//$(document).ready(function(){
-//    function slider(){
-//        var num = 0;
-//        var result;
-//        setInterval (function(){
-//            result = num * -1200;
-//            num++;
-//            console.log(num);
-//            console.log(result);
-//            if (num=3){
-//                num=0;
-//            }
-//            console.log(num);
-//            $(".slider").stop().animate({
-//                left : result + 'px'
-//            });
-//        },2000);
-//    }
-//    slider();
-//});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

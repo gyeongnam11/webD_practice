@@ -30,7 +30,7 @@ $(document).ready(function () {
     })
 });
 
-//slider
+//slider 좌우
 $(document).ready(function(){
     function slider(){
         var num = 0;
@@ -52,6 +52,44 @@ $(document).ready(function(){
     slider();
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//slide 상하
+
+//$(document).ready(function(){
+//    function slider(){
+//        var num = 0;
+//        var result;
+//        setInterval(function(){
+//            result = num * -300;
+//            num++;
+//            console.log(num);
+//            if (num==3){
+//                num=0;
+//            }
+//            console.log(num);
+//            $(".slider").stop().animate({
+//                top : result +'px'
+//            });
+//        },2000);
+//    }
+//    slider();
+//});
 
 
 

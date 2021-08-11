@@ -1,0 +1,100 @@
+/*nor*/
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*cus*/
+.main_page {
+    width: 1200px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #afafaf;
+}
+
+header > .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: #999;
+}
+
+header > .menu {
+    float: right;
+    width: 600px;
+    margin-top: 28px;
+    margin-left: 30px;
+    background-color: #888;
+
+}
+
+header > .menu li {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+
+}
+header > .menu li:hover {
+    background-color: white;
+}
+
+header > .menu li a {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+/*submenu*/
+header > .menu li ul.submenu{
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color: white;
+}
+header > .menu li ul.submenu li{
+    width: 100%;
+}
+header > .menu li ul.submenu li :hover{
+    background-color: black;
+    color: white;
+}
+.slide{
+/*    float: left;*/
+    height: 300px;
+    background-color: #777;
+}
+/*컨텐츠*/
+.contents > div {
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+.contents > .notice {
+    background-color: #666;
+}
+
+.contents > .banner {
+    background-color: #555;
+}
+
+.contents > .shortcut {
+    background-color: #444;
+}
