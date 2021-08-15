@@ -1,0 +1,151 @@
+/*nor*/
+body,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/*lib*/
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/*cus*/
+.main_page{
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #afafaf;
+}
+.side{
+    float: left;
+    width: 250px;
+    height: 650px;
+    background-color: #999;
+}
+.side> .logo{
+    width: 250px;
+    height: 100px;
+    background-color: #fff;
+    
+}
+.side> .logo img{
+    margin: 25px;
+    width: 200px;
+    height: 40px;
+}
+/*menu*/
+.side> .menu{
+    width: 250px;
+    height: 610px;
+    
+}
+ .side>.menu li{
+    text-align: center;
+    background-color: lightcoral;
+}
+ .side>.menu li> a{
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.side>.menu li:hover >a{
+    background-color: lightgray;
+}
+/*submenu*/
+.side>.menu li ul.submenu{
+    display: none;
+}
+.side>.menu li ul.submenu li{
+   background-color: white;
+}
+.side>.menu li ul.submenu a:hover{
+   background-color: blanchedalmond;
+}
+/*right_side*/
+.right_side{
+    float: right;
+    width: 750px;
+    height: 650px;
+}
+.slide{
+    height: 350px;
+    overflow: hidden;
+}
+.slide .slider{
+    position: relative;
+}
+.slide .slider p{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+/*contents*/
+.contents> div{
+    float: left;
+    width: 33.3333%;
+    height: 650px;
+    
+}
+.notice{
+    float: left;
+    background-color: white;
+}
+/*tab*/
+.tab_menu{
+    float: left;
+   margin-left: 10px;
+    margin-top: 10px;
+    width: 250px;
+    height: 200px;
+}
+.tab_btn li{
+    float: left;
+    padding: 10px;
+    background-color: lightcoral;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.tab_con{
+    float: left;
+    padding: 10px;
+   
+    width: 211px;
+    height: 100px;
+    background-color: lightgray;
+}
+.tab_con .contents {
+    font-size: 15px;
+    line-height: 25px;
+}
+.tab_con span{
+    float: right;
+}
+.gallery ul {
+    display: flex;
+    width: 211px;
+    height: 100px;
+    
+}
+.gallery li img{
+    display: block;
+    margin: auto;
+    padding: 8px;
+    margin-top: 10px;
+    width: 55px;
+    height: 55px;
+}
+
+
+
+
