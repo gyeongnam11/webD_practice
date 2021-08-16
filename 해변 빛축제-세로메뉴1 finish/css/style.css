@@ -1,0 +1,305 @@
+/*nor*/
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*cus*/
+.main_page {
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #afafaf;
+}
+
+.side {
+    float: left;
+    width: 250px;
+    height: 650px;
+    background-color: white;
+}
+
+.side > .logo {
+    width: 250px;
+    height: 100px;
+    background-color: #fff;
+
+}
+
+.side > .logo img {
+    margin: 25px;
+    width: 200px;
+    height: 40px;
+}
+
+/*menu*/
+.side > .menu {
+    width: 250px;
+    height: 610px;
+
+}
+
+.side > .menu li {
+    text-align: center;
+    background-color: lightcoral;
+}
+
+.side > .menu li > a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.side > .menu li:hover > a {
+    background-color: lightgray;
+}
+
+/*submenu*/
+.side > .menu li ul.submenu {
+    display: none;
+}
+
+.side > .menu li ul.submenu li {
+    background-color: white;
+}
+
+.side > .menu li ul.submenu a:hover {
+    background-color: blanchedalmond;
+}
+
+/*right_side*/
+.right_side {
+    float: left;
+    width: 750px;
+    height: 650px;
+}
+
+.slide {
+    height: 350px;
+    overflow: hidden;
+}
+
+.slide .slider {
+    position: relative;
+}
+
+.slide .slider p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+
+}
+
+.contents > .notice {
+    background-color: white;
+}
+
+/*tab*/
+.tab_menu {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 250px;
+    height: 200px;
+}
+
+.tab_btn li {
+    float: left;
+    padding: 10px;
+    background-color: lightcoral;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tab_btn li:hover {
+    background-color: beige;
+}
+
+.tab_btn li a {
+    font-weight: bold;
+}
+
+.tab_con {
+    float: left;
+    padding: 10px;
+
+    width: 211px;
+    height: 100px;
+    background-color: lightgray;
+}
+
+.tab_con .contents {
+    font-size: 10px;
+    line-height: 25px;
+}
+
+.tab_con span {
+    float: right;
+}
+
+.gallery ul {
+    display: flex;
+    width: 211px;
+    height: 100px;
+
+}
+
+.gallery li img {
+    display: block;
+    margin: auto;
+    padding: 8px;
+    margin-top: 10px;
+    width: 55px;
+    height: 55px;
+}
+
+.banner {
+    width: 250px;
+    height: 200px;
+    background-color: white;
+
+}
+
+.banner img {
+    margin-top: 5px;
+    width: 240px;
+    height: 190px;
+
+}
+
+.shortcut {
+    width: 250px;
+    height: 200px;
+    background-color: white;
+}
+
+.shortcut img {
+    margin-top: 5px;
+    width: 240px;
+    height: 190px;
+}
+
+/*footer*/
+footer > div {
+    float: left;
+}
+
+footer > .foot_logo {
+    width: 200px;
+    height: 100px;
+    background-color: darksalmon;
+}
+
+.foot_logo img {
+    display: block;
+    margin: auto;
+    padding: 40px;
+    width: 100px;
+    height: 20px;
+
+}
+
+.foot_menu {
+
+    width: 550px;
+    height: 50px;
+    background-color: gray;
+}
+
+.foot_menu li {
+    float: left;
+    padding: 15px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+.copyright {
+    width: 550px;
+    height: 50px;
+    background-color: lightgray;
+
+}
+
+.copyright p2 {
+    float: left;
+    padding: 13px;
+    margin-left: 60px;
+    text-align: center;
+    font-style: italic;
+}
+
+.layer-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.layer {
+    display: none;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 5px solid #48487d;
+    position: fixed;
+    left: 35%;
+    top: 30%;
+    /*    margin-left: -250px;*/
+    /*    margin-top: -250px;*/
+    z-index: 100;
+}
+
+.layer h2 {
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.layer_body {
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.layer button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    border: 3px solid #48487d;
+    border-radius: 5px;
+    /*    padding: 5px;*/
+    width: 50px;
+    height: 25px;
+}
