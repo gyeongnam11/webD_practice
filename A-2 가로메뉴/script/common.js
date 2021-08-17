@@ -6,7 +6,6 @@ $(document).ready(function () {
         $(".menu > ul > li > ul").hide();
     });
 
-
 });
 //tab bt
 $(document).ready(function () {
