@@ -42,54 +42,45 @@ header > .logo {
 }
 
 /*menu*/
-header > .menu {
-    position: relative;
+header> .menu{
     float: right;
     width: 600px;
-    margin-top: -40px;
     margin-right: 30px;
+    margin-top: -42px;
 }
-
-header > .menu li {
+header> .menu li{
+    position: relative;
     float: left;
     width: 25%;
-    text-align: center;
-    position: relative;
     background-color: cornflowerblue;
 }
-
-header > .menu li a {
+header> .menu li a{
     display: block;
     padding: 10px;
-    font-size: 15px;
+    text-align: center;
     font-weight: bold;
 }
-
-header > .menu li:hover > a {
+header> .menu li:hover> a{
     background-color: beige;
 }
-
-/*submenu*/
-header > .menu li ul.submenu {
-    display: none;
+header> .menu li ul.submenu{
     position: absolute;
     z-index: 1;
 }
-
-header > .menu li ul.submenu li {
+header> .menu li ul.submenu li{
     width: 100%;
-    background-color: aliceblue;
+    background-color: azure;
 }
-
-header > .menu ul li:first-child ul.submenu::after {
+header> .menu ul li:first-child ul.submenu:after{
     content: "";
     position: absolute;
-    top: 0px;
-    left: -570px;
     width: 570px;
-    height: 118px;
-    background-color: aliceblue;
+    left: -570px;
+    height: 124px;
+    background-color: azure;
+    
 }
+
 
 /*slide*/
 .slide {
@@ -110,15 +101,15 @@ header > .menu ul li:first-child ul.submenu::after {
 }
 
 .slide .slider p:first-child {
-    top: 0;
+    left: 0;
 }
 
 .slide .slider p:nth-child(2) {
-    top: 300px;
+    left: 1200px;
 }
 
 .slide .slider p:nth-child(3) {
-    top: 600px;
+    left: 2400px;
 }
 
 /*contents*/
