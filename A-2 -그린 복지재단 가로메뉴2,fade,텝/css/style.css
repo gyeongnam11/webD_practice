@@ -1,0 +1,252 @@
+/*nor*/
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*cus*/
+.main_page {
+    width: 1200px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #afafaf;
+}
+
+/*logo*/
+header > .logo {
+    width: 250px;
+    height: 100px;
+    background-color: beige;
+}
+
+.logo img {
+    width: 200px;
+    height: 40px;
+    padding: 25px;
+}
+
+/*menu*/
+header > .menu {
+    float: right;
+    width: 600px;
+    margin-right: 30px;
+    margin-top: -42px;
+}
+
+header > .menu li {
+    position: relative;
+    float: left;
+    width: 25%;
+    background-color: cornflowerblue;
+}
+
+header > .menu li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+header > .menu li:hover > a {
+    background-color: beige;
+}
+
+header > .menu li ul.submenu {
+    position: absolute;
+    z-index: 1;
+}
+
+header > .menu li ul.submenu li {
+    width: 100%;
+    background-color: azure;
+}
+
+header > .menu ul li:first-child ul.submenu:after {
+    content: "";
+    position: absolute;
+    width: 570px;
+    left: -570px;
+    height: 124px;
+    background-color: azure;
+
+}
+
+
+/*slide*/
+.slide {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide .slider {
+    position: relative;
+
+}
+
+.slide .slider p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+.slide .slider p:first-child {
+    left: 0;
+}
+
+.slide .slider p:nth-child(2) {
+    left: 1200px;
+}
+
+.slide .slider p:nth-child(3) {
+    left: 2400px;
+}
+*/
+
+/*contents*/
+.contents >div{
+    float: left;
+    width: 33.3333%;
+}
+.contents .notice{
+    background-color: bisque;
+    width: 400px;
+    height: 200px;
+}
+/*tab*/
+.tab_menu{
+    float: left;
+    padding: 7px;
+     width: 400px;
+    height: 200px;
+}
+.tab_btn li{
+    float: left;
+    background-color: azure;
+    font-weight: bold;
+    padding: 5px;
+}
+.tab_btn li:hover{
+    background-color: lightgray;
+}
+.tab_con{
+    float: left;
+      width: 380px;
+    height: 155px;
+    background-color: white;
+}
+.tab_con .contents{
+    padding: 5px;
+    line-height: 36px;
+
+}
+.gallery ul{
+    display: flex;
+       width: 380px;
+    height: 155px;
+    
+}
+.gallery li{
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+/*footer*/
+
+.foot_logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+}
+
+.foot_logo img {
+    width: 100px;
+    height: 20px;
+    padding: 35px;
+}
+
+.foot_menu {
+    float: left;
+    width: 700px;
+    height: 100px;
+
+}
+
+.foot_menu li {
+    float: left;
+    text-align: center;
+    padding: 15px;
+    margin-left: 60px;
+}
+
+.copyrihgt {
+    float: left;
+    position: relative;
+    top: 50px;
+    right: 250px;
+    text-align: center;
+}
+
+.familysite {
+    float: left;
+    position: relative;
+    top: 35px;
+    right: 50px;
+    text-align: center;
+}
+
+/*popup*/
+.layer-bg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.layer {
+    display: none;
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    background-color: #fff;
+    padding: 5px;
+    z-index: 100;
+}
+
+.layer h2 {
+    text-align: center;
+}
+
+.layer-body {
+    text-align: center;
+    line-height: 25px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 13px;
+}
