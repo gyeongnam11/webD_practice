@@ -1,0 +1,306 @@
+/*nor*/
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*cus*/
+.main_page {
+    width: 1200px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+header > .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: white;
+}
+.logo img{
+    display: flex;
+    padding: 25px;
+    width: 200px;
+    height: 40px;
+}
+
+/*menu*/
+header > .menu {
+    float: right;
+    width: 600px;
+    margin-top: 28px;
+    margin-right: 30px;
+    background-color: lightskyblue;
+
+}
+
+header > .menu li {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+
+}
+
+header > .menu li a {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header > .menu li:hover > a {
+    background-color: green;
+    color: white;
+}
+
+/*submenu*/
+header > .menu li ul.submenu {
+    position: absolute;
+    display: none;
+    background-color: white;
+    z-index: 1;
+
+}
+
+header > .menu li ul.submenu li {
+    width: 100%;
+
+}
+
+/*sldier*/
+.slide {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide .slider {
+    position: relative;
+}
+
+.slide .slider p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+.slide .slider p:first-child {
+    left: 0;
+}
+
+.slide .slider p:nth-child(2) {
+    left: 1200px;
+}
+
+.slide .slider p:nth-child(3) {
+    left: 2400px;
+}
+*/
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+}
+
+.notice {
+    float: left;
+    background-color: white;
+    /*    border: 5px solid white;*/
+
+}
+
+.tab_menu {
+    float: left;
+    padding: 10px;
+    width: 380px;
+    height: 180px;
+}
+
+.tab_btn li {
+    float: left;
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.tab_btn li a {
+    font-weight: bold;
+}
+.tab_btn li:hover {
+    background-color:gainsboro;
+}
+
+.tab_con {
+    float: left;
+    width: 370px;
+    height: 135px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: aliceblue;
+}
+.tab_con .contents{
+    padding: 10px;
+    line-height: 28px; 
+}
+.tab_con span{
+    float: right;
+}
+
+
+.gallery ul {
+    display: flex;
+    width: 370px;
+    height: 135px;
+}
+
+.gallery li {
+    display: block;
+    padding: 10px;
+    margin: auto;
+}
+
+.banner {
+    display: block;
+    margin: auto;
+    background-color: #fff;
+}
+
+.banner img {
+    width: 398px;
+    height: 190px;
+    padding: 3px;
+}
+.shortcut{
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    
+}
+.shortcut img{
+     width: 398px;
+    height: 190px;
+    padding: 3px;
+    
+}
+
+/*layer*/
+.layer {
+    display: none;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 5px solid #48487d;
+    position: fixed;
+    left: 35%;
+    top: 30%;
+    /*    margin-left: -250px;*/
+    /*    margin-top: -250px;*/
+    z-index: 100;
+}
+
+.layer h2 {
+    margin-top: 15px;
+    text-align: center;
+/*    padding: 10px;*/
+
+}
+
+.layer button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    border: 3px solid #48487d;
+    border-radius: 5px;
+/*    padding: 5px;*/
+    width: 50px; 
+    height: 25px;
+}
+
+.layer-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.layer_body{
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+}
+/*footer*/
+.foot_logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color:aliceblue ; 
+}
+.foot_logo img{
+     display: flex;
+    padding: 40px;
+    width: 100px;
+    height: 20px; 
+}
+.copyright{
+    float: left;
+    
+    width: 700px;
+    height: 100px;
+    background-color: aliceblue;
+}
+.copyright li{
+   display: inline-block;
+    width: 200px;
+    margin-top: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+}
+.copy{
+    height: 50px;
+    width: 700px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    
+}
+.sns{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: aliceblue;
+}
+.sns h1{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+
