@@ -1,14 +1,13 @@
-
 //menu
 $(document).ready(function(){
-    
-    $(".menu > ul > li").mouseover(function (){
-        $(".menu > ul > li > ul").stop().slideDown(200);
+    $(".menu>ul>li").mouseover(function(){
+        $(this).find(".submenu").stop().slideDown(200);
     });
-    $(".menu > ul > li").mouseout(function (){
-        $(".menu >ul> li > ul").stop().slideUp(200);
+    $(".menu>ul>li").mouseout(function(){
+        $(this).find(".submenu").stop().slideUp(200);
     });
 });
+
 
 //slide
 $(document).ready(function(){
@@ -16,15 +15,16 @@ $(document).ready(function(){
         var num =0;
         var result;
         setInterval (function(){
-            result = num * -300;
+            result = num * -1200;
             num++;
             console .log(num);
+            console .log(result);
             if(num==3){
                 num=0;
             }
             console .log(num);
             $(".slider").stop().animate({
-                top : result + 'px'
+                left : result + 'px'
             });
         },1000);
     }
