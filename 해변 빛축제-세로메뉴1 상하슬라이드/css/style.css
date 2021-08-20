@@ -1,0 +1,92 @@
+/*nor*/
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*cus*/
+.main_page {
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lemonchiffon;
+}
+.side{
+    float: left;
+    width: 250px;
+    height: 650px;
+}
+.side> .logo{
+    width: 250px;
+    height: 100px;
+    background-color: aliceblue
+}
+.side> .logo img{
+    width: 200px;
+    height: 40px;
+    padding: 30px;
+}
+/*menu*/
+.side> .menu{
+    width: 250px;
+    height: 550px;
+}
+.side> .menu li{
+    text-align: center;
+    background-color: lightcoral;
+}
+.side> .menu li>a{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.side> .menu li ul.submenu{
+    display: none;
+}
+.side> .menu li ul.submenu li{
+    background-color: white;
+}
+/*side*/
+.right_side{
+    float: left;
+    width: 750px;
+    height: 650px;
+}
+.slide{
+   height: 350px;
+    overflow: hidden;
+}
+.slide .slider{
+    position: relative;
+}
+.slide .slider p{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.slide .slider p:first-child{
+    top: 0;
+}
+.slide .slider p:nth-child(2){
+    top: 350px;
+}
+.slide .slider p:nth-child(3){
+    top: 700px;
+}
