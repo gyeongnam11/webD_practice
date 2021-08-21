@@ -1,0 +1,98 @@
+/*nor*/
+body,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/*lib*/
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/*cus*/
+.main_page{
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+}
+.side{
+    float: left;
+    width: 250px;
+    height: 650px;
+}
+.side> .logo{
+    width: 250px;
+    height: 100px;
+    margin-right: 28px;
+    background-color: aliceblue;
+}
+.side> .logo img{
+     width: 200px;
+    height: 40px;
+    padding: 25px;
+}
+/*menu*/
+.side> .menu{
+    width: 250px;
+    height: 550px;
+}
+.side> .menu li{
+    text-align: center;
+    background-color: cadetblue;
+}
+.side> .menu li a{
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+.side> .menu li:hover> a{
+    background-color: burlywood;
+}
+/*submenu*/
+.side> .menu li ul.submenu{
+    display: none;
+    
+}
+.side> .menu li ul.submenu li{
+    background-color: azure;
+}
+/*right_side*/
+.right_side{
+    float: left;
+    width: 750px;
+    height: 650px;
+}
+.slide{
+    height: 350px;
+/*    overflow: hidden;*/
+}
+.slider img{
+    width: 750px;
+    height: 350px;
+}
+.slide .slider{
+    position: relative;
+}
+.slide .slider p{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+.slide .slider p:first-child{
+    left: 0;
+}
+.slide .slider p:nth-child(2){
+    left: 1200px;
+}
+.slide .slider p:nth-child(3){
+    left: 2400px;
+}
