@@ -32,3 +32,17 @@ $(document).ready(function(){
     }
     slider();
 });
+
+//popup 
+$(document).ready(function(){
+    $(".tab_con li:first").click(function(){
+        
+        $(".layer").show();
+        $(".layer_bg").show();
+    });
+        $(".close_btn").click(function(){
+        
+        $(".layer").hide();
+        $(".layer_bg").hide();
+    });
+});
