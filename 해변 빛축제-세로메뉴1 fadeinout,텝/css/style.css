@@ -1,0 +1,235 @@
+/*nor*/
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*cus*/
+.main_page {
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+}
+
+.side {
+    float: left;
+    width: 250px;
+    height: 650px;
+    background-color: aliceblue;
+}
+
+.side > .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+}
+
+.logo img {
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding: 25px;
+}
+
+/*menu*/
+.side > .menu {
+    float: left;
+    width: 250px;
+    background-color: cadetblue;
+
+}
+
+.side > .menu li {
+    text-align: center;
+    position: relative;
+
+}
+
+.side > .menu li a {
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.side > .menu li:hover > a {
+    background-color: lightcoral;
+}
+
+/*submenu*/
+.side > .menu li ul.submenu {
+    display: none;
+/*    position: absolute;
+    width: 250px;
+    right: -250px;
+    top: 0;
+    z-index: 1;*/
+
+}
+
+.side > .menu li ul.submenu li {
+    /*    width: 100%;*/
+    background-color: antiquewhite;
+}
+
+/*slide*/
+.right_side {
+    float: left;
+    width: 750px;
+    height: 650px;
+}
+
+.slide {
+    overflow: hidden;
+    height: 350px;
+}
+
+.slide .slider {
+    position: relative;
+}
+
+.slide .slider p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+}
+
+.contents .notice {
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+
+.contents .tab_menu {
+    float: left;
+    width: 250px;
+    height: 200px;
+    background-color: lightgray;
+
+}
+
+.contents .tab_btn {
+    float: left;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: azure;
+}
+
+.contents .tab_con {
+    float: left;
+    width: 230px;
+    height: 145px;
+    margin-left: 10px;
+    background-color: lightblue;
+
+}
+
+.contents .tab_con li {
+    padding: 5px;
+    line-height: 24px;
+}
+.contents .gallery {
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+
+.contents .tab_menu2 {
+    float: left;
+    width: 250px;
+    height: 200px;
+    background-color: lightgray;
+
+}
+
+.contents .tab_btn2 {
+    float: left;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: azure;
+}
+.contents .tab_con2 ul{
+    display: flex;
+    width: 230px;
+    height: 145px;
+    margin-left: 10px;
+    background-color: lightblue;
+
+}
+.contents .tab_con2 li{
+   margin: auto;
+    display: block;
+    padding: 5px;
+}
+.contents .tab_con2 img{
+    width: 65px;
+    height:65px;
+}
+.foot_logo{
+    float: left;
+    width: 150px;
+    height: 100px;
+    background-color: aliceblue;
+}
+.foot_logo img{
+    width: 100px;
+    height: 20px;
+    padding:30px;
+}
+.layer_bg{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.layer{
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    left: 35%;
+    top: 30%;
+    background-color: white;
+}
+.layer h2{
+    text-align: center;
+}
+.layer_body{
+    position: fixed;
+    text-align: center;
+    padding: 10px;
+}
+.layer button{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    
+}
