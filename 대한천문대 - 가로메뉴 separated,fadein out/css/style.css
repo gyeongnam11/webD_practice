@@ -1,0 +1,206 @@
+/*nor*/
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*cus*/
+.main_page {
+    width: 1200px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-right-color: aliceblue;
+}
+
+header > .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+header > .logo img {
+    float: left;
+    width: 2o0px;
+    height: 40px;
+    padding: 25px;
+}
+
+/*menu*/
+header > .menu {
+    float: right;
+    width: 600px;
+    margin-top: 45px;
+    margin-right: 28px;
+    background-color: cornflowerblue;
+}
+
+header > .menu li {
+    float: left;
+    position: relative;
+    width: 25%;
+
+
+}
+
+header > .menu li a {
+    display: block;
+    padding: 10px;
+
+}
+
+header > .menu li:hover > a {
+    background-color: green;
+}
+
+/*submenu*/
+header > .menu li ul.submenu {
+    position: absolute;
+    background-color: aliceblue;
+    z-index: 1;
+
+}
+
+header > .menu li ul.submenu li {
+    width: 100%;
+}
+
+/*slide*/
+.slide {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide .slider {
+    position: relative;
+}
+
+.slide .slider p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+}
+
+.notice {
+    float: left;
+    background-color: aliceblue;
+}
+
+.tab_menu {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+.tab_btn {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: lightgray;
+}
+
+.tab_btn li {
+    float: left;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 8px;
+
+}
+.tab_btn li:hover{
+    background-color: beige;
+}
+
+.tab_con {
+    float: left;
+    width: 360px;
+    height: 140px;
+    margin-left: 10px;
+    background-color: lightsteelblue;
+}
+
+.tab_con .contents {
+    float: left;
+    width: 360px;
+    height: 140px;
+}
+
+.tab_con .contents li {
+    padding: 5px;
+    line-height: 24px;
+}
+
+.gallery ul {
+    display: flex;
+    width: 360px;
+    height: 145px;
+}
+
+.gallery li {
+    margin: auto;
+}
+.layer_bg{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 50;
+}
+.layer{
+    position: fixed;
+    display: none;
+    width: 400px;
+    height: 300px;
+    left: 35%;
+    top: 30%;
+    z-index: 100;
+    background-color: #fff;
+    
+}
+.layer h2{
+    text-align: center;
+}
+
+.layer_body{
+    position: fixed;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+     left: 35%;
+    top: 30%;
+    margin-top: 60px;
+    
+    
+}
+.layer button{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: lightgray;
+    
+}
