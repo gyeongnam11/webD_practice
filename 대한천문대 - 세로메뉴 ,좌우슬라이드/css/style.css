@@ -1,0 +1,170 @@
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*cus*/
+.main_page {
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+}
+
+.side {
+    float: left;
+    width: 250px;
+    height: 650px;
+}
+
+.side .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+.side .logo img {
+    float: left;
+    width: 200px;
+    height: 44px;
+    padding: 25px;
+}
+
+.side > .menu {
+    width: 250px;
+    height: 550px;
+
+}
+
+.side > .menu li {
+
+    text-align: center;
+    background-color: cornsilk;
+}
+
+.side > .menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.side > .menu li ul.submenu {
+    display: none;
+}
+
+.side > .menu li ul.submenu li {
+    background-color: lightgray;
+}
+
+.right_side {
+    float: left;
+    width: 750px;
+    height: 650px;
+}
+
+/*slide*/
+.slide {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide .slider {
+    position: relative;
+}
+
+.slide .slider p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.slide .slider p:first-child {
+    left: 0;
+}
+
+.slide .slider p:nth-child(2) {
+    left: 1200px;
+}
+
+.slide .slider p:nth-child(3) {
+    left: 2400px;
+}
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+}
+
+.contents .notice {
+     background-color: beige;
+}
+
+.contents .tab_menu {
+    float: left;
+    width: 250px;
+    height: 180px;
+}
+.contents .tab_btn {
+    float: left;
+    padding: 10px;
+    background-color: lightgray;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.contents .tab_con{
+    float: left;
+    margin-left: 5px;
+    width: 230px;
+    height: 120px;
+    background-color: azure;
+}
+.contents .tab_con li{
+    margin: 5px;
+    line-height: 24px;
+}
+.contents .gallery {
+     background-color: beige;
+}
+.contents .tab_menu2 {
+    float: left;
+    width: 250px;
+    height: 180px;
+}
+.contents .tab_btn2 {
+    float: left;
+    padding: 10px;
+    background-color: lightgray;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.contents .tab_con2 ul{
+    display: flex;
+    width: 230px;
+    height: 120px;
+    background-color: azure;
+}
+.contents .tab_con2 li{
+   margin: auto;
+    padding: 5px;
+}
+.contents .tab_con2 img{
+    width: 60px;
+    height: 60px;
+}
