@@ -1,0 +1,188 @@
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*cus*/
+.main_page {
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+}
+
+.side {
+    float: left;
+    width: 250px;
+    height: 650px;
+}
+
+.side .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+.side .logo img {
+    float: left;
+    width: 200px;
+    height: 44px;
+    padding: 25px;
+}
+
+.side > .menu {
+    width: 250px;
+    height: 550px;
+
+}
+
+.side > .menu li {
+
+    text-align: center;
+    background-color: cornsilk;
+}
+
+.side > .menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.side > .menu li ul.submenu {
+    display: none;
+}
+
+.side > .menu li ul.submenu li {
+    background-color: lightgray;
+}
+
+.right_side {
+    float: left;
+    width: 750px;
+    height: 650px;
+}
+
+/*slide*/
+.slide {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide .slider {
+    position: relative;
+}
+
+.slide .slider p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.slide .slider p:first-child {
+    top: 0;
+}
+
+.slide .slider p:nth-child(2) {
+    top: 300px;
+}
+
+.slide .slider p:nth-child(3) {
+    top: 600px;
+}
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+}
+
+.contents > .notice {
+    background-color: beige;
+}
+/*tab*/
+.contents .tab_menu {
+    width: 250px;
+    height: 200px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.contents .tab_btn li {
+    float: left;
+    background-color: lightgray;
+    padding: 5px;
+
+}
+
+.contents .tab_con {
+    float: left;
+    width: 230px;
+    height: 140px;
+    background-color: aliceblue;
+}
+
+.contents .tab_con .contents li {
+    padding: 5px;
+    line-height: 24px;
+}
+
+.contents .gallery ul {
+    display: flex;
+    width: 230px;
+    height: 140px;
+}
+
+.contents .gallery li img {
+    padding: 3px;
+    margin: auto;
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+}
+.layer_bg{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.layer{
+    position: fixed;
+    display: none;
+    width: 400px;
+    height: 300px;
+    left: 35%;
+    top: 30%;
+    background-color: #fff;
+}
+.layer h2{
+    text-align: center;
+}
+.layer_body{
+    text-align: justify;
+    padding: 10px;
+    
+}
+.layer button{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
