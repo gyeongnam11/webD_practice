@@ -10,24 +10,24 @@ $(document).ready(function () {
     );
 });
 
-
 //slide
-$(document).ready(function(){
-    function slider(){
+$(document).ready(function () {
+    function slider() {
         var num = 0;
         var result;
-        setInterval(function(){
-            result = num * -300;
+        setInterval(function () {
+            result = num * -1200;
             num++;
             console.log(num);
-            if(num==3){
-                num=0;
+            console.log(result);
+            if (num == 3) {
+                num = 0;
             }
             console.log(num);
             $(".slider").stop().animate({
-                top : result + 'px'
+                left: result + 'px'
             });
-        },1000);
+        }, 1000);
     }
     slider();
 });
@@ -51,14 +51,13 @@ $(document).ready(function () {
 });
 
 //popup
-$(document).ready(function(){
-    $(".tab_con .contents li:first").click(function(){
+$(document).ready(function () {
+    $(".tab_con li:first").click(function () {
         $(".layer").show();
         $(".layer_bg").show();
     });
-    $(".close_btn").click(function(){
+    $(".close_btn").click(function () {
         $(".layer").hide();
         $(".layer_bg").hide();
     });
 });
-
