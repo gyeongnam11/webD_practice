@@ -1,12 +1,21 @@
-//menu
+////menu
+//$(document).ready(function(){
+//    $(".menu>ul>li").mouseover(function(){
+//        $(".menu>ul>li>ul").stop().slideDown(200);
+//        $(".menu_bg").stop().slideDown(200);
+//    });
+//    $(".menu>ul>li").mouseout(function(){
+//        $(".menu>ul>li>ul").stop().slideUp(200);
+//        $(".menu_bg").stop().slideUp(200);
+//    });
+//});
+
 $(document).ready(function(){
     $(".menu>ul>li").mouseover(function(){
-        $(".menu>ul>li>ul").stop().slideDown(200);
-        $(".menu_bg").stop().slideDown(200);
+        $(this).find(".submenu").stop().slideDown(200);
     });
     $(".menu>ul>li").mouseout(function(){
-        $(".menu>ul>li>ul").stop().slideUp(200);
-        $(".menu_bg").stop().slideUp(200);
+        $(this).find(".submenu").stop().slideUp(200);
     });
 });
 

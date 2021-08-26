@@ -94,18 +94,22 @@ header > .menu li a {
     margin: auto;
     padding: 10px;
 }
+header > .menu li:hover> a{
+    background-color: burlywood;
+}
 
 header > .menu li ul.submenu {
     position: absolute;
-    /*    display: none;*/
+/*        display: none;*/
     background-color: aliceblue;
-    z-index: 2;
+    z-index: 1;
 }
 
 header > .menu li ul.submenu li {
     width: 100%;
 }
 
+/*
 .menu_bg {
     position: absolute;
     display: none;
@@ -117,6 +121,7 @@ header > .menu li ul.submenu li {
     z-index: 1;
 
 }
+*/
 
 /*contents*/
 .contents > div {
@@ -137,17 +142,23 @@ header > .menu li ul.submenu li {
     height: 200px;
 }
 
-.tab_btn li {
+.tab_btn li{
     float: left;
     margin-top: 8px;
     margin-left: 8px;
     background-color: lightgray;
-    padding: 8px;
+   
+    border: 1px solid aliceblue;
+    border-radius: 5px;
 }
 
 .tab_btn li a {
     float: left;
     font-weight: bold;
+     padding: 5px;
+}
+.tab_btn li:hover{
+    background-color: lightblue;
 }
 
 .tab_con {
@@ -157,61 +168,33 @@ header > .menu li ul.submenu li {
     height: 135px;
     background-color: aliceblue;
 }
-
 .tab_con li {
     padding: 5px;
     line-height: 24px;
 }
-
-.gallery {
-    float: left;
-    width: 400px;
-    height: 200px;
-    background-color: beige;
-}
-
-.tab_menu2 {
-    float: left;
-    width: 400px;
-    height: 200px;
-}
-
-.tab_btn2 li {
-    float: left;
-    margin-top: 8px;
-    margin-left: 8px;
-    background-color: lightgray;
-    padding: 8px;
-}
-
-.tab_btn2 li a {
-    float: left;
-    font-weight: bold;
-}
-
-.tab_con2 ul {
+.gallery ul{
     display: flex;
-    margin-left: 8px;
-    width: 370px;
+     width: 370px;
     height: 135px;
-    background-color: aliceblue;
 }
-
-.tab_con2 li {
+.gallery li{
     display: block;
     margin: auto;
 }
-.layer_bg{
+
+
+.layer_bg {
     position: fixed;
     display: none;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 50;
 }
-.layer{
+
+.layer {
     position: fixed;
     display: none;
     background-color: white;
@@ -221,14 +204,17 @@ header > .menu li ul.submenu li {
     top: 30%;
     z-index: 100;
 }
-.layer h2{
+
+.layer h2 {
     text-align: center;
 }
-.layer_body{
+
+.layer_body {
     text-align: justify;
     padding: 10px;
 }
-.layer button{
+
+.layer button {
     position: absolute;
     bottom: 30px;
     right: 30px;
