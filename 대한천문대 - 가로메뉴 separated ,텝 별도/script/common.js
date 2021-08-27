@@ -1,32 +1,44 @@
 //menu
+//$(document).ready(function () {
+//    $(".menu>ul>li").mouseover(function () {
+//        $(".menu>ul>li>ul").stop().slideDown(200);
+//        $(".menu_bg").stop().slideDown(200);
+//    });
+//    $(".menu>ul>li").mouseout(function () {
+//        $(".menu>ul>li>ul").stop().slideUp(200);
+//        $(".menu_bg").stop().slideUp(200);
+//    });
+//});
+
 $(document).ready(function () {
     $(".menu>ul>li").hover(
         function () {
             $(this).find(".submenu").stop().slideDown(200);
         },
+
         function () {
             $(this).find(".submenu").stop().slideUp(200);
         }
     );
 });
 
-//$(document).ready(function () {
-//    function slider() {
+//slide
+//$(document).ready(function(){
+//    function slider(){
 //        var num = 0;
 //        var result;
-//        setInterval(function () {
-//            result = num * -1200;
+//        setInterval(function(){
+//            result = num *-300;
 //            num++;
 //            console.log(num);
-//            console.log(result);
-//            if (num == 3) {
-//                num = 0;
+//            if(num==3){
+//                num=0;
 //            }
 //            console.log(num);
 //            $(".slider").stop().animate({
-//                left: result + 'px'
+//                top : result +'px'
 //            });
-//        }, 1000);
+//        },1000);
 //    }
 //    slider();
 //});
@@ -35,16 +47,15 @@ $(document).ready(function () {
     function slider() {
         var num = 0;
         setInterval(function () {
-            if(num==3){
-                num=0;
+            if (num == 3) {
+                num = 0;
             }
-            
             $('.slider p').hide();
             $('.slider p').eq(-num).stop().fadeOut();
             $('.slider p').eq(-num).stop().fadeIn();
-            console.log(num);
+            console.log();
             num++;
-        },2000);
+        }, 1000);
     }
     slider();
 });
@@ -66,7 +77,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $(".tab_con li :first").click(function () {
+    $(".tab_con li:first").click(function () {
         $(".layer").show();
         $(".layer_bg").show();
     });
