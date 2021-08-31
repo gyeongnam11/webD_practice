@@ -1,0 +1,211 @@
+/*nor*/
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*lib*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*cus*/
+.main_page {
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+}
+
+.side {
+    float: left;
+    width: 250px;
+    height: 650px;
+}
+
+.side > .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+.side > .logo img {
+    float: left;
+    width: 200px;
+    height: 40px;
+    padding: 25px;
+}
+
+.side > .menu {
+    float: left;
+    width: 250px;
+    background-color: darksalmon;
+}
+
+.side > .menu li {
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 250px;
+}
+
+.side > .menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.side > .menu li:hover > a {
+    background-color: darkseagreen;
+}
+
+.side > .menu li ul.submenu {
+    display: none;
+    position: absolute;
+    width: 250px;
+    right: -250px;
+    top: 0;
+    z-index: 1;
+}
+
+.side > .menu li ul.submenu li {
+    background-color: snow;
+}
+
+.right_side {
+    float: left;
+    width: 750px;
+}
+
+.slide {
+    height: 350px;
+    overflow: hidden;
+}
+
+.slide .slider {
+    position: relative;
+}
+
+.slide .slider p {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+.slide .slider p:first-child{
+    left: 0;
+}
+.slide .slider p:nth-child(2){
+    left: 1200px;
+}
+.slide .slider p:nth-child(3){
+    left: 2400px;
+}*/
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+}
+
+.notice {
+    float: left;
+    background-color: aliceblue;
+    width: 250px;
+    height: 200px;
+}
+
+.tab_menu {
+    float: left;
+    background-color: aliceblue;
+    width: 250px;
+    height: 200px;
+}
+
+.tab_btn li {
+    float: left;
+    background-color: lightcoral;
+    padding: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+    border: 1px solid lightgray;
+    border-radius: 5px 5px 0 0;
+    /*    border-bottom: none;*/
+}
+
+.tab_con {
+    float: left;
+    width: 230px;
+    height: 150px;
+    background-color: lightgray;
+    margin-left: 8px;
+}
+
+.tab_con li {
+    padding: 6px;
+    line-height: 25px;
+}
+
+.gallery ul {
+    display: flex;
+    width: 230px;
+    height: 150px;
+    background-color: lightgray;
+}
+
+.gallery li {
+    margin: auto;
+}
+
+.gallery img {
+    width: 60px;
+    height: 60px;
+}
+
+.foot_logo {
+    float: left;
+    background-color: aliceblue;
+    width: 200px;
+    height: 100px;
+}
+
+.foot_logo img {
+    width: 100px;
+    height: 20px;
+    padding: 45px;
+}
+
+.foot_menu{
+    float: left;
+    width: 550px;
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+.foot_menu li{
+    float: left;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-left: 60px;
+    padding: 15px;
+    
+}
+.copyright{
+    float: left;
+    text-align: center;
+    padding: 10px;
+    margin-left: 240px;
+}
